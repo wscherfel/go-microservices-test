@@ -22,16 +22,6 @@ func panicIf(err error) {
   }
 }
 
-/* this is moved in other package
-// @dao
-type StringModel struct {
-  gorm.Model
-
-  Key string
-  Value string
-}
-*/
-
 type StringService interface {
   Save(string, string) error
   Load(string, bool) (string, error)
